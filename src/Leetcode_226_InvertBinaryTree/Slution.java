@@ -1,4 +1,4 @@
-package Leetcode226_InvertBinaryTree;
+package Leetcode_226_InvertBinaryTree;
 
 import TreeNode.TreeNode;
 

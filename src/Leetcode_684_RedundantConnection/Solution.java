@@ -1,4 +1,4 @@
-package LeetCode684_RedundantConnection;
+package Leetcode_684_RedundantConnection;
 
 import java.util.ArrayList;
 import java.util.HashMap;

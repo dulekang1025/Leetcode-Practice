@@ -1,4 +1,4 @@
-package Leetcode19_RemoveNthNodeFromEndofList;
+package Leetcode_19_RemoveNthNodeFromEndofList;
 
 import Singly_LinkedList.ListNode;
 
