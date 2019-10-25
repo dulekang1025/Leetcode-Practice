@@ -1,0 +1,31 @@
+package Leetcode_20_Valid_Parentheses;
+
+import java.util.Stack;
+
+class Solution {
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '[') {
+                stack.push(s.charAt(i));
+            }
+            if (s.charAt(i) == ')') {
+                if (stack.empty()) return false;
+                if (stack.peek() != '(') return false;
+                stack.pop();
+            }
+            if (s.charAt(i) == ']') {
+                if (stack.empty()) return false;
+                if (stack.peek() != '[') return false;
+                stack.pop();
+            }
+            if (s.charAt(i) == '}') {
+                if (stack.empty()) return false;
+                if (stack.peek() != '{') return false;
+                stack.pop();
+            }
+        }
+        if (!stack.empty()) return false;
+        return true;
+    }
+}
