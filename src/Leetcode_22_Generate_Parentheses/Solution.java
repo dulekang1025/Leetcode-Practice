@@ -17,6 +17,7 @@ class Solution {
         if(left == 0 && right == 0){
             res.add(s);
             return;
+            
         }
         if(left > 0){
             helper(res,left - 1,right, s + "(");
