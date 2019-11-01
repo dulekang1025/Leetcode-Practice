@@ -15,6 +15,5 @@ class Solution {
             }
             return num[n-1];
         }
-
     }
 }
