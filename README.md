@@ -1,2 +1,2 @@
-# Leetcode_Power
-# Record of my daily prectice of Leetcode🎆
+# Leetcode practice
+Record of my daily prectice of Leetcode🎆
