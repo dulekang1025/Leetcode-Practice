@@ -2,7 +2,7 @@ package Graph_Node;
 
 import java.util.List;
 
-// Definition for a Node of graph from Leetcode
+// Definition for a Node_ of graph from Leetcode
 public class Node {
     public int val;
     public List<Node> neighbors;

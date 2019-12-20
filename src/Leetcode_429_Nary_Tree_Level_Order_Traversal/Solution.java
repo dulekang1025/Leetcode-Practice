@@ -4,14 +4,14 @@ package Leetcode_429_Nary_Tree_Level_Order_Traversal;
 import java.util.LinkedList;
 import java.util.List;
 
-// Definition for a Node.
-//class Node {
+// Definition for a Node_.
+//class Node_ {
 //    public int val;
-//    public List<Node> children;
+//    public List<Node_> children;
 //
-//    public Node() {}
+//    public Node_() {}
 //
-//    public Node(int _val,List<Node> _children) {
+//    public Node_(int _val,List<Node_> _children) {
 //        val = _val;
 //        children = _children;
 //    }
