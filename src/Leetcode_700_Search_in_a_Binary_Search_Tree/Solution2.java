@@ -1,5 +1,7 @@
 package Leetcode_700_Search_in_a_Binary_Search_Tree;
 
+import TreeNode.TreeNode;
+
 public class Solution2 {
     TreeNode ans;
     public TreeNode searchBST(TreeNode root, int val) {
