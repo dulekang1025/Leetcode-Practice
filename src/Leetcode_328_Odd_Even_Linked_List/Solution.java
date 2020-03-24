@@ -1,6 +1,8 @@
+package Leetcode_328_Odd_Even_Linked_List;
+
 import Singly_LinkedList.ListNode;
 
-public class Leetcode_328_Odd_Even_Linked_List {
+public class Solution {
     public ListNode oddEvenList(ListNode head) {
         if(head == null || head.next == null) return head;
         ListNode r = head;
