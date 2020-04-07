@@ -14,9 +14,9 @@ class Solution {
             res.add(new ArrayList<>(sublist));
             return;
         }
-        for(int i : nums){
-            if(sublist.contains(i)) continue;
-            sublist.add(i);
+        for(int i = 0; i < nums.length; i++){
+            if(sublist.contains(nums[i])) continue;
+            sublist.add(nums[i]);
             dfs(res, sublist, nums);
             sublist.remove(sublist.size() - 1);
         }
