@@ -1,7 +1,7 @@
 package Leetcode_130_Surrounded_Regions;
 
 
-//The key point of this solution is that only the '0's on the boarder and its connected 'O's could not be surrounded.
+// The key point of this solution is that only the '0's on the boarder and its connected 'O's could not be surrounded.
 // Therefore, the DFS solution is to find 'O's on the boarders, and dfs to mark its connected 'O's.
 public class Solution {
     public void solve(char[][] board) {
@@ -10,6 +10,7 @@ public class Solution {
         int n = board[0].length;
         int x,y;
 
+        // first row
         for( y = 0; y < n; y++){
             x = 0;
             if(board[x][y] == 'o'){
@@ -17,18 +18,23 @@ public class Solution {
             }
         }
 
+        // first col
         for( x = 0; x < m; x++){
             y = 0;
             if(board[x][y] == 'o'){
                 dfs(x,y,board);
             }
         }
+
+        // last col
         for( x = 0; x < m; x++){
             y = n-1;
             if(board[x][y] == 'o'){
                 dfs(x,y,board);
             }
         }
+
+        // last row
         for( y = 0; y < n; y++){
             x = m-1;
             if(board[x][y] == 'o'){
