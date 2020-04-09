@@ -1,4 +1,4 @@
-package Leetcode_130_SurroundedRegions;
+package Leetcode_130_Surrounded_Regions;
 
 
 //The key point of this solution is that only the '0's on the boarder and its connected 'O's could not be surrounded.
