@@ -13,7 +13,7 @@ public class Solution {
         // first row
         for( y = 0; y < n; y++){
             x = 0;
-            if(board[x][y] == 'o'){
+            if(board[x][y] == 'O'){
                 dfs(x,y,board);
             }
         }
@@ -21,7 +21,7 @@ public class Solution {
         // first col
         for( x = 0; x < m; x++){
             y = 0;
-            if(board[x][y] == 'o'){
+            if(board[x][y] == 'O'){
                 dfs(x,y,board);
             }
         }
@@ -29,7 +29,7 @@ public class Solution {
         // last col
         for( x = 0; x < m; x++){
             y = n-1;
-            if(board[x][y] == 'o'){
+            if(board[x][y] == 'O'){
                 dfs(x,y,board);
             }
         }
@@ -37,7 +37,7 @@ public class Solution {
         // last row
         for( y = 0; y < n; y++){
             x = m-1;
-            if(board[x][y] == 'o'){
+            if(board[x][y] == 'O'){
                 dfs(x,y,board);
             }
         }
@@ -45,19 +45,19 @@ public class Solution {
 
         for(int i = 0; i<m; i++){
             for(int j = 0; j<n; j++){
-                if(board[i][j] == 'o') board[i][j] = 'x';
+                if(board[i][j] == 'O') board[i][j] = 'X';
             }
         }
 
         for(int q = 0; q<m; q++){
             for(int w = 0; w<n; w++){
-                if(board[q][w] == '*') board[q][w] = 'o';
+                if(board[q][w] == '*') board[q][w] = 'O';
             }
         }
     }
 
     public void dfs(int i,int j, char[][] board){
-        if(i<0 || j<0 || i>=board.length || j>=board[0].length || board[i][j] == 'x' || board[i][j] == '*') return;
+        if(i<0 || j<0 || i>=board.length || j>=board[0].length || board[i][j] == 'X' || board[i][j] == '*') return;
         board[i][j] = '*';
         dfs(i-1,j,board);
         dfs(i+1,j,board);
