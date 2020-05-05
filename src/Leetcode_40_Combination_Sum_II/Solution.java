@@ -14,13 +14,14 @@ class Solution {
     }
     private void helper(List<List<Integer>> ans, int[] candidates, int target, int i, List<Integer> cur){
         if(target < 0) return;
-        if(target == 0 && !ans.contains(cur)){
+        if(target == 0){
             ans.add(new ArrayList<>(cur));
             return;
         }
-        for(; i < candidates.length; i++){
-            cur.add(candidates[i]);
-            helper(ans, candidates, target - candidates[i], i + 1, cur);
+        for(int j = i; j < candidates.length; j++){
+            if(j > i && candidates[j] == candidates[j - 1]) continue;
+            cur.add(candidates[j]);
+            helper(ans, candidates, target - candidates[j], j + 1, cur);
             cur.remove(cur.size() - 1);
         }
     }
