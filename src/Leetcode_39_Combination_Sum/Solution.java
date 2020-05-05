@@ -9,7 +9,6 @@ class Solution {
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> cur = new ArrayList<>();
         Arrays.sort(candidates);
-        for(int n : candidates) System.out.println(n);
         helper(ans, candidates, target, 0, cur);
         return ans;
     }
