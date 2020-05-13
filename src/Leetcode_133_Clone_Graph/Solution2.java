@@ -23,7 +23,7 @@ public class Solution2 {
         }
         return cloned;
     }
-    
+
     class Node {
         public int val;
         public List<Node> neighbors;
