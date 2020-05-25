@@ -1,4 +1,4 @@
-package Leetcode_105_Bulid_Tree_from_Pre_Inorder;
+package Leetcode_105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal;
 import TreeNode.TreeNode;
 
 //对于给定的前序遍历preorder和中序遍历inorder，
