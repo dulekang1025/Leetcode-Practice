@@ -15,7 +15,7 @@ class Solution {
         Queue<Integer> queue = new LinkedList<>();
         int[] visited = new int[N + 1];
 
-        for(int i = 1; i <= N; i++){
+        for(int i = 1; i <= N; i++){  // 为了便利到每一个子图，因为可能每个子图不相连
             if(visited[i] != 0 || !map.containsKey(i)) continue;
             queue.add(i);
             visited[i] = 1;
