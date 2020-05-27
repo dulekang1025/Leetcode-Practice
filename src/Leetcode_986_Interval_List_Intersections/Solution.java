@@ -1,4 +1,4 @@
-package Leetode_986_Interval_List_Intersections;
+package Leetcode_986_Interval_List_Intersections;
 
 import java.util.ArrayList;
 import java.util.List;
