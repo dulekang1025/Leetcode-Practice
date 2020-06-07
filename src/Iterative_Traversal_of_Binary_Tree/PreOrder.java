@@ -19,7 +19,6 @@ public class PreOrder {
             root = root.right;
         }
     }
-    
 
     public static void main(String[] args) {
         // [1,3,null,null,2]
