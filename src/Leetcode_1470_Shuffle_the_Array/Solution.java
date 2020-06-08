@@ -5,14 +5,13 @@ class Solution {
         int[] ans = new int[2 * n];
         int i = 0, j = n;
         int k = 0;
-        while(i < n){
+        while(j < 2 * n){
             if(i > (j - n)){
                 ans[k++] = nums[j++];
             }else{
                 ans[k++] = nums[i++];
             }
         }
-        ans[2 * n - 1] = nums[2 * n - 1];
         return ans;
     }
 }
