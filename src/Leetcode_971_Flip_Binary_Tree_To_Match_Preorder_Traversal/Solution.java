@@ -11,13 +11,16 @@ class Solution {
     boolean flag = false;
     public List<Integer> flipMatchVoyage(TreeNode root, int[] voyage) {
         dfs(root, voyage);
+        if(flag){
+            ans.clear();
+            ans.add(-1);
+        }
         return ans;
     }
     public void dfs(TreeNode root, int[] voyage){
-        if(root == null) return;
+        if(root == null || flag) return;
         if(root.val != voyage[index]){
-            ans.clear();
-            ans.add(-1);
+            flag = true;
             return;
         }
         if(root.left != null && root.left.val != voyage[index + 1]){
