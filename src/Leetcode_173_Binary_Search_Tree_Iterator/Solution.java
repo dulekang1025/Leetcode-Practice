@@ -16,6 +16,8 @@ import java.util.List;
  *     TreeNode(int x) { val = x; }
  * }
  */
+
+// Space : O(N)
 class BSTIterator {
 
     List<Integer> inOrder;
