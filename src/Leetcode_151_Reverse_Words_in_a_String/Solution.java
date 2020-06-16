@@ -6,7 +6,7 @@ class Solution {
         String[] arr = s.trim().split(" ", -1);
         for(int i = arr.length - 1; i >= 0; i--){
             System.out.println(arr[i]);
-            if(!arr[i].equals("") || !arr[i].equals("")){
+            if(!arr[i].equals("") || !arr[i].equals(" ")){
                 sb.append(arr[i].trim());
                 if(i != 0){
                     sb.append(" ");
