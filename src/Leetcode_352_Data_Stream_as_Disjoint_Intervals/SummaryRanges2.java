@@ -8,7 +8,7 @@ class SummaryRanges2 {
     TreeSet<int[]> set;
 
     /** Initialize your data structure here. */
-    public SummaryRanges() {
+    public SummaryRanges2() {
         set = new TreeSet<>((a, b) -> a[0] - b[0]);
     }
 
