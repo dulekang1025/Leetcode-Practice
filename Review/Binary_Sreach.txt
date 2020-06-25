@@ -2,6 +2,8 @@
 
     35. Search Insert Position
     74. Search a 2D Matrix
+    278. First Bad Version
+    367. Valid Perfect Square
 
 
 
