@@ -7,6 +7,8 @@
     475. Heaters
     704. Binary Search
     378. Kth Smallest Element in a Sorted Matrix
+    1337. The K Weakest Rows in a Matrix
+
 
 
 
