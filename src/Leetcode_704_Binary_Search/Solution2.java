@@ -1,6 +1,6 @@
 package Leetcode_704_Binary_Search;
 
-public class Solutioin2 {
+public class Solution2 {
     public int search(int[] nums, int target) {
         int low = 0;
         int high = nums.length;
