@@ -17,3 +17,13 @@
 
 
 2. Find upper bound
+
+
+
+
+
+3. other
+
+    162. Find Peak Element
+    852. Peak Index in a Mountain Array
+
