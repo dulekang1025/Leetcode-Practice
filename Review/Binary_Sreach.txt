@@ -6,6 +6,8 @@
     367. Valid Perfect Square
     475. Heaters
     704. Binary Search
+    378. Kth Smallest Element in a Sorted Matrix
+
 
 
 
