@@ -27,3 +27,6 @@
     162. Find Peak Element
     852. Peak Index in a Mountain Array
 
+
+
+4. "Koko eats banana" type
