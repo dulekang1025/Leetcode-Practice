@@ -9,13 +9,6 @@
     378. Kth Smallest Element in a Sorted Matrix
     1337. The K Weakest Rows in a Matrix
 
-
-
-
-
-
-
-
 2. Find upper bound
 
 
