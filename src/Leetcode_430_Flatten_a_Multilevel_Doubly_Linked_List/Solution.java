@@ -12,6 +12,13 @@ class Node {
 
 import java.util.Stack;
 
+class Node {
+    public int val;
+    public Node prev;
+    public Node next;
+    public Node child;
+};
+
 class Solution {
     public Node flatten(Node head) {
         Stack<Node> s = new Stack<>();
@@ -32,11 +39,4 @@ class Solution {
         }
         return head;
     }
-
-    class Node {
-        public int val;
-        public Node prev;
-        public Node next;
-        public Node child;
-    };
 }
