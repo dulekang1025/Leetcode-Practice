@@ -10,26 +10,35 @@ MAYBE WRONG DIRECTION!!!!
  */
 class Solution {
     public void reorderList(ListNode head) {
-        ListNode p1 = head;
-        ListNode p2 = head;
-        ListNode temp;
-
-        while(p2.next.next != null){
-            p2 = p2.next;
+        if(head == null || head.next == null || head.next.next == null) return;
+        ListNode slow = head, fast = head, p = head;
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
         }
-        while(p1.next != null){
-            while(p2.next.next != null){
-                p2 = p2.next;
-            }
-            System.out.println(p1.val + ", " + p2.val);
-
-            temp = p1.next;
-            p1.next = p2.next;
-            p2.next.next = temp;
-            p2.next = null;
-            p1 = p1.next.next;
-            p2 = head;
+        ListNode q = reverse(slow.next);
+        ListNode cur = q;
+        slow.next = null;
+        while(p != null && q != null){
+            ListNode temp_p = p.next;
+            ListNode temp_q = q.next;
+            p.next = q;
+            q.next = temp_p;
+            p = temp_p;
+            q = temp_q;
         }
+        return;
+    }
+    private ListNode reverse(ListNode q){
+        if(q == null || q.next == null) return q;
+        q.next = reverse(q.next);
+        ListNode temp = q, newHead = q.next;
+        while(temp.next != null){
+            temp = temp.next;
+        }
+        temp.next = q;
+        q.next = null;
+        return newHead;
     }
 
     public static void main(String[] args){
