@@ -2,10 +2,7 @@ package Iterative_Traversal_of_Binary_Tree;
 
 import TreeNode.TreeNode;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class PostOrder {
 
@@ -40,6 +37,29 @@ public class PostOrder {
             ans.addFirst(root.val);
             if(root.left != null) stack.push(root.left);
             if(root.right != null) stack.push(root.right);
+        }
+        return ans;
+    }
+
+    //3
+    public List<Integer> postorderTraversal3(TreeNode root) {
+        Deque<TreeNode> stack = new ArrayDeque<>();
+        List<Integer> ans = new ArrayList<>();
+        TreeNode pre = null;
+        while(!stack.isEmpty() || root != null){
+            while(root != null){
+                stack.push(root);
+                root = root.left;
+            }
+            root = stack.pop();
+            if(pre == root.right || root.right == null){
+                ans.add(root.val);
+                pre = root;
+                root = null;
+            }else{
+                stack.push(root);
+                root = root.right;
+            }
         }
         return ans;
     }
