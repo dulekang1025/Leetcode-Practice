@@ -13,7 +13,7 @@ class Solution {
         int left = helper(root.left);
         int right = helper(root.right);
         max = Math.max(max, Math.max(root.val, Math.max(root.val + right,
-                Math.max(root.val + left,root.val + left + right ))));
+                Math.max(root.val + left, root.val + left + right ))));
         return Math.max(root.val, Math.max(root.val + right, root.val + left));
     }
 }
