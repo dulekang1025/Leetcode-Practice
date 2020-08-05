@@ -1,5 +1,7 @@
 package Leetcode_648_Replace_Words;
 
+import java.util.List;
+
 class Solution {
 
     Node root = new Node();
