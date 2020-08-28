@@ -1,5 +1,8 @@
 package Leetcode_470_Implement_Rand10_Using_Rand7;
 
+class Solution{
+
+}
 //class Solution extends SolBase {
 //    public int rand10() {
 //        while(true){
