@@ -1,5 +1,8 @@
 package Leetcode_1578_MinimumDeletionCostToAvoidRepeatingLetters;
 
+// for every sequence of repeated characters in String s,
+// we need to remove all the characters in the sequence,
+// except the most expensive character to remove
 class Solution {
     public int minCost(String s, int[] cost) {
         int res = 0, max = 0, sum = 0, n = cost.length;
