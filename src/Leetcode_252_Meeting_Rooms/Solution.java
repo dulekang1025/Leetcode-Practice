@@ -1,5 +1,7 @@
 package Leetcode_252_Meeting_Rooms;
 
+import java.util.Arrays;
+
 class Solution {
     public boolean canAttendMeetings(int[][] intervals) {
         Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
