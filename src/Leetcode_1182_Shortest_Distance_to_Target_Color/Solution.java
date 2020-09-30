@@ -1,5 +1,10 @@
 package Leetcode_1182_Shortest_Distance_to_Target_Color;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 class Solution {
     public List<Integer> shortestDistanceColor(int[] colors, int[][] queries) {
         Map<Integer, List<Integer>> map = new HashMap<>();
