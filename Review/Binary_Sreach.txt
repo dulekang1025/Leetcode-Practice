@@ -13,6 +13,7 @@
 2. Find upper bound
 
     441. Arranging Coins
+    1182. Shortest Distance to Target Color
 
 
 
