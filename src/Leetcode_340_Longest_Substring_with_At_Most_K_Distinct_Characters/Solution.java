@@ -22,7 +22,6 @@ class Solution {
                 }
                 l++;
             }
-            //eceba
             max = Math.max(max, r - l + 1);
             r++;
         }
