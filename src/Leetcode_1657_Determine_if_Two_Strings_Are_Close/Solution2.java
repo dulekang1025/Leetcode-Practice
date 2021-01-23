@@ -20,22 +20,11 @@ public class Solution2 {
         int size = set.size();
         for(char c : word2.toCharArray()){
             a2[c - 'a']++;
-            if(set.contains(c))
-                set.remove(c);
+            set.remove(c);
         }
         if(set.size() != 0) return false;
-        int[] arr1 = new int[size];
-        int[] arr2 = new int[size];
-        int index = 0;
-        for(int i = 0; i < 26; i++){
-            if(a1[i] != 0) arr1[index++] = a1[i];
-        }
-        index = 0;
-        for(int i = 0; i < 26; i++){
-            if(a2[i] != 0) arr2[index++] = a2[i];
-        }
-        Arrays.sort(arr1);
-        Arrays.sort(arr2);
-        return Arrays.equals(arr1, arr2);
+        Arrays.sort(a1);
+        Arrays.sort(a2);
+        return Arrays.equals(a1, a2);
     }
 }
