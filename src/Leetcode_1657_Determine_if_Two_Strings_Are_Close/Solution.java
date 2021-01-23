@@ -21,7 +21,6 @@ class Solution {
                 set.remove(c);
         }
         if(set.size() != 0) return false;
-        System.out.println(1);
         List<Integer> l1 = new ArrayList<>();
         List<Integer> l2 = new ArrayList<>();
         for(int i = 0; i < 26; i++){
@@ -38,3 +37,6 @@ class Solution {
         return true;
     }
 }
+
+// Condition 1: Every character that exists in word1 must exist in word2 as well
+// Condition 2: The frequency of all the characters is always the same.
